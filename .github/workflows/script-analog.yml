@@ -1,0 +1,15 @@
+name: Run script on script-workflow.yml
+
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: Script to run
+        required: true
+
+jobs:
+  call-script:
+    uses: mthurston/continuous-intelivery/.github/workflows/script-workflow.yml@main
+    with:
+      script: ${{ inputs.script }}
+    #secrets: inherit

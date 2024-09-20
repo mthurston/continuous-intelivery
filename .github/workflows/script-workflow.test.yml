@@ -1,4 +1,4 @@
-name: Test script-worfkow.yml
+name: Test script-workflow.yml
 
 on:
   push:
