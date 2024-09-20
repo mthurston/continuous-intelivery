@@ -1,8 +1,8 @@
-name: Call a reusable workflow
+name: Test script-worfkow.yml
 
 on:
-  pull_request:
-    branches:
+  push:
+    branches: 
       - main
 
 jobs:
