@@ -1,0 +1,13 @@
+name: Call a reusable workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  call-script:
+    uses: mthurston/continuous-intelivery/.github/workflows/script-workflow.yml@main
+    with:
+      script: echo 'hello world!'
+    #secrets: inherit
